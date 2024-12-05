@@ -1,0 +1,213 @@
+/* This project is part of Codecademy full-stack engineer career path */
+/* General elements */
+* {
+  background-color: black;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  min-height: 69px;
+  max-height: 69px;
+  border-bottom: 1px solid seashell;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  z-index: 10;
+  margin-bottom: 69px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Fixed header */
+.marginHeader {
+  margin-top: 69px;
+}
+
+.logo {
+  z-index: 10;
+  max-height: 50px;
+  padding-left: 10px; 
+  justify-items: left;
+  opacity: 0.9;
+}
+
+.navHeader {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  list-style-type: none;
+  padding-right: 20px;
+  margin: 0;
+}
+
+.headerElement {
+  text-decoration: underline;
+}
+
+/* Mission section */
+.mission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 700px;
+  max-width: calc(100% - 100px);
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*1a36m2l*_gcl_au*MTQ4Mjc2NjM5LjE3MzA5Njk4OTU.*_ga*ODU0MjYyMTM0OC4xNzMwOTY5ODk4*_ga_3LRZM6TM9L*MTczMzMzODI1Ny45NS4xLjE3MzMzMzgyOTMuMC4wLjA.");
+  background-size: contain 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.missionText {
+  background-color: black;
+  width: 100%; 
+  box-sizing: border-box; 
+  opacity: 1;
+}
+
+.missionText h2,
+.missionText h4 {
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+}
+
+/* Tea section */
+.tea {
+  max-width: 1000px;
+  padding: 50px 0;
+  
+  margin: 0 auto;
+}
+
+.teaHeader {
+  text-align: center; 
+}
+
+.teaHeader h2,
+.teaHeader h4 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.teaSorts {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to next line */
+  justify-content: center; /* Centers the items */
+  gap: 20px; /* Adds space between items */
+}
+
+.sort {
+  flex: 0 1 300px; /* Allows items to shrink but not grow, base width 300px */
+  text-align: center; /* Centers the text within each sort */
+}
+
+.sort img {
+  max-width: 300px;
+  height: auto;
+  max-height: 200px;
+  margin-bottom: 10px;
+}
+
+.sort h4 {
+  margin-top: 0;
+}
+
+/* Location section */
+.locs {
+  min-height: 500px;
+  max-width: calc(100% - 100px);
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*15ksuj5*_gcl_au*MTQ4Mjc2NjM5LjE3MzA5Njk4OTU.*_ga*ODU0MjYyMTM0OC4xNzMwOTY5ODk4*_ga_3LRZM6TM9L*MTczMzM4OTU3MC45Ny4xLjE3MzMzODk2MDQuMC4wLjA.");
+  max-width: calc(100% - 100px);
+  margin: 0 auto;
+  padding: 100px 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.locs h2 {
+  background-color: transparent;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.teaLocs {
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 40px; 
+  opacity: 1;
+  background-color: transparent;
+}
+
+.loc {
+  background-color: black;
+  opacity: 1;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.loc h3 {
+  margin: 0;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.loc ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.loc li {
+  margin-bottom: 0;
+}
+
+/* Impressum & footer */
+.impressum {
+  height: 200px;
+  padding-top: 0;
+}
+.impressum h2 {
+  margin-top: 7px;
+  padding-bottom: 13px;
+}
+footer h5 {
+  text-align: left;
+  margin: 0; 
+  padding-left: 20px; 
+  padding-bottom: 25px;
+}
